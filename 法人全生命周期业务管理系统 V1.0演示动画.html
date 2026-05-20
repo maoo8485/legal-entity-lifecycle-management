@@ -2,7 +2,9 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>法人全生命周期业务管理系统 V1.0 · 产品演示</title>
 <style>
   :root{
@@ -199,10 +201,35 @@
   body.low-power.motion-ready [data-anim],
   body.low-power [data-anim]{opacity:1!important;transform:none!important}
   @media(max-width:900px){
-    .h-hero{font-size:14vw}.h-xl{font-size:8vw}
+    .h-hero{font-size:14vw}.h-xl{font-size:8vw}.h-sub{font-size:3.2vw}.lead{font-size:2.8vw}
     .kpi-hero{font-size:28vw}.pipeline{grid-template-columns:repeat(2,1fr)}
     .grid-2-7-5,.grid-2-6-6,.grid-2-8-4{grid-template-columns:1fr}
     .grid-12{grid-template-columns:repeat(6,1fr)}
+    .duo-compare{grid-template-columns:1fr;gap:3vh 0}
+    .duo-compare .vrule{display:none}
+    .slide{padding:4vh 4vw 6vh 4vw}
+    .chrome{font-size:9px}.foot{font-size:9px}
+    .step-nb{font-size:2.4vw}.step-title{font-size:2.6vw}.step-desc{font-size:2vw}
+    .card-glass{padding:var(--sp-5)}
+    #nav .dot{width:5px;height:5px}
+    #nav .dot.active{width:14px}
+    #hint{font-size:8px;bottom:1.8vh;right:3vw}
+  }
+  @media(max-width:500px){
+    .h-hero{font-size:12vw}.h-xl{font-size:7vw}.h-sub{font-size:4vw}.lead{font-size:3.2vw}
+    .body-sm{font-size:max(10px,2.6vw)}
+    .pipeline{grid-template-columns:1fr;gap:2vh}
+    [style*="grid-template-columns:repeat(3,1fr)"]{grid-template-columns:1fr!important;gap:1.6vh!important}
+    .slide{padding:3vh 3vw 5vh 3vw}
+    .chrome{font-size:8px;letter-spacing:.1em}
+    .foot{font-size:8px}
+    .kicker{font-size:9px}
+    .kpi-hero{font-size:24vw}
+    .duo-compare .col-ttl{font-size:4vw}
+    blockquote{font-size:5vw!important}
+    #hint{font-size:7px}
+    .step-nb{font-size:3vw}.step-title{font-size:3.2vw}.step-desc{font-size:2.6vw}
+    .frame-img.h-22{height:14vh}.frame-img.h-26{height:16vh}.frame-img.h-28{height:18vh}.frame-img.h-32{height:20vh}
   }
 </style>
 </head>
